@@ -16,8 +16,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Instagram Video Downloader",
-  description: "Download Instagram Videos",
+  title: "TEST PAGE",
+  description: "TEST PAGE",
 };
 
 export default function RootLayout({
@@ -33,20 +33,10 @@ export default function RootLayout({
           "overflow-x-hidden bg-background font-sans antialiased"
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <ReactQueryProvider>
-            <Navbar />
+        
             <main className="relative h-[calc(100vh-6rem)] overflow-y-auto px-2 sm:px-4">
               {children}
             </main>
-            <Footer />
-          </ReactQueryProvider>
-        </ThemeProvider>
       </body>
     </html>
   );
